@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    background: #efefef;
+    color: #2D2D2D;
+    margin: 0;
+    padding: 0;
+}
+
+#logo {
+    height: 48px;
+}
+
+header {
+    background: #fff;
+    border-bottom: 1px solid #eee;
+}
+
+.hero-section {
+    background: #e00032;
+    color: #fff;
+}
+
+.hero-section .text-highlight {
+    color: #fff;
+}
+
+.hero-section .btn.hero-btn {
+    background: #fff;
+    color: #e00032;
+    border-radius: 25px;
+    padding: 0.6rem 2.2rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    border: none;
+    transition: background 0.2s, color 0.2s;
+}
+
+.hero-section .btn.hero-btn:hover {
+    background: #2D2D2D;
+    color: #fff;
+}
+
+.services-section {
+    background: #efefef;
+}
+
+#services h2,
+#clients h2,
+#team h2 {
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #2D2D2D;
+}
+
+.service-block {
+    padding: 0 2rem;
+    position: relative;
+}
+
+.service-block .service-icon {
+    width: 80px;
+    height: 80px;
+    display: block;
+    margin-bottom: 18px;
+    object-fit: contain;
+}
+
+.service-block h4 {
+    margin-top: 12px;
+    margin-bottom: 14px;
+    font-weight: 700;
+    color: #2D2D2D;
+}
+
+.service-block p {
+    margin-bottom: 0;
+    color: #2D2D2D;
+}
+
+@media (min-width: 992px) {
+    .service-block:not(:last-child)::after {
+        content: '';
+        position: absolute;
+        top: 15%;
+        right: 0;
+        width: 1px;
+        height: 70%;
+        background: #ccc;
+    }
+}
+
+.clients-section {
+    background: #e00032;
+    color: #fff;
+}
+
+#clients .client-logo {
+    max-height: 40px;
+    width: auto;
+    display: inline-block;
+}
+
+#team {
+    background: #fff;
+}
+
+#team .team-photo {
+    width: 220px;
+    height: auto;
+    object-fit: contain;
+    border-radius: 0;
+    border: none;
+    margin-bottom: 0.75rem;
+    background: transparent;
+}
+
+.team-member {
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.team-divider {
+    width: 80%;
+    height: 4px;
+    background: #e00032;
+    margin: 0 auto 1.5rem auto;
+    border-radius: 2px;
+    margin-top: -8px;
+}
+
+#team h2 {
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+#team .font-weight-bold {
+    font-weight: 700 !important;
+    color: #2D2D2D;
+}
+
+#team p {
+    margin-bottom: 0.5rem;
+}
+
+.footer-section {
+    background: #2D2D2D;
+    color: #fff;
+}
